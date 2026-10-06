@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FixTrack — Waiting Line</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<input id="menu-toggle" type="checkbox"><input id="dark-mode" class="theme-toggle" type="checkbox">
+<div class="app"><aside class="sidebar"><div class="brand">FIXTRACK<small>CIVIL OPERATIONS</small></div><nav class="nav">
+<a href="index.html"><span class="icon">⌂</span>Dashboard</a>
+<a href="../01_issue_board/index.html"><span class="icon">▦</span>Issue Board</a>
+<a href="../02_report_issue/index.html"><span class="icon">＋</span>Report Issue</a>
+<a href="../03_possible_duplicate/index.html"><span class="icon">⊙</span>Possible Duplicate</a>
+<a class="active" href="../04_waiting_line/index.html"><span class="icon">◷</span>Waiting Line <span class="badge">8</span></a>
+<a href="../05_assigned_work/index.html"><span class="icon">⌁</span>Assigned Work</a>
+<a href="../06_verify_fix/index.html"><span class="icon">✓</span>Verify Fix</a>
+<a href="../07_issue_detail/index.html"><span class="icon">♙</span>Issue Detail</a>
+<a href="../08_analytics/index.html"><span class="icon">⌁</span>Analytics</a>
+<a href="../09_billing/index.html"><span class="icon">▤</span>Billing</a>
+
+<a href="../10_login/index.html"><span class="icon">↪</span>Login</a>
+<a class="nav-signup" href="../11_signup/index.html"><span class="icon">✦</span>Sign Up</a>
+</nav><div class="profile-mini"><div class="row"><div class="avatar">AM</div><div><strong>Arina Malik</strong><span>Facilities manager</span></div></div><div class="progress"><i></i></div></div></aside><label class="mobile-overlay" for="menu-toggle"></label>
+<main class="content"><header class="topbar"><label class="hamburger" for="menu-toggle">☰</label><div class="search">⌕ <span>Search issues, rooms, people...</span></div><div class="actions"><a class="btn btn-outline auth-top-btn" href="../10_login/index.html">Login</a><a class="btn btn-primary auth-top-btn" href="../11_signup/index.html">Sign Up</a><div class="theme-toggle"><label for="dark-mode">☾</label></div><a class="btn btn-primary" href="../02_report_issue/index.html">＋ Report issue</a></div></header>
+<div class="page"><div class="eyebrow">DECISION SUPPORT</div><div class="title-row"><div><h1>Waiting line and accountability</h1><div class="subtitle">Prioritize by urgency and impact, manage assignments and give every issue a clear owner.</div></div><button class="btn btn-green">Auto-assign safe matches</button></div>
+<section class="stats"><div class="stat"><strong>8</strong><small>Needs review</small><span class="trend">2 new in the last hour</span></div><div class="stat"><strong>4</strong><small>Overdue</small><span class="trend" style="color:#d93643">3 outside SLA</span></div><div class="stat"><strong>6</strong><small>Likely duplicates</small><span class="trend">4 within 1 hour</span></div><div class="stat"><strong>11</strong><small>Unassigned</small><span class="trend">2 waiting beyond 24h</span></div></section>
+<div class="grid-3">
+<section class="card"><div class="card-head"><strong>Urgency × impact</strong><span class="subtitle">All • heatmap</span></div><div class="card-body"><div class="matrix"><span></span><span class="ok">1</span><span class="mid">2</span><span class="mid">2</span><span class="hi">3</span><span class="hi">4</span><span class="ok">1</span><span class="ok">2</span><span class="mid">2</span><span class="mid">3</span><span class="hi">4</span><span class="hi">5</span><span class="ok">1</span><span class="ok">1</span><span class="ok">2</span><span class="mid">2</span><span class="mid">3</span><span class="hi">4</span><span class="ok">0</span><span class="ok">1</span><span class="ok">1</span><span class="ok">2</span><span class="mid">2</span><span class="mid">3</span><span class="ok">0</span><span class="ok">1</span><span class="ok">1</span><span class="ok">1</span><span class="ok">2</span><span class="mid">2</span></div><div class="subtitle" style="margin-top:10px">Low → High &nbsp; | &nbsp; Impact →</div></div></section>
+<section class="card"><div class="card-head"><strong>Attention required</strong><a href="#" class="subtitle">View all 11 items ›</a></div><div class="card-body">
+<div class="alert"><strong>🧯 Fire-exit door</strong><br>Blocked door near Maple Hostel • <b>HIGH SLA RISK</b><br><button class="btn btn-primary" style="margin-top:7px">Dispatch now</button></div>
+<div class="alert"><strong>◉ Drain report cluster</strong><br>3 reports near Engineering Block • likely duplicate cluster.<br><button class="btn btn-outline" style="margin-top:7px">Review & Merge</button></div>
+<div class="alert"><strong>⚡ 3 unassigned high priority</strong><br>Facilities team is free; assign the highest first.<br><button class="btn btn-primary" style="margin-top:7px">Assign owners</button></div>
+</div></section>
+</div></div></main></div></body></html>

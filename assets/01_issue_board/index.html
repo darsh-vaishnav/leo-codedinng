@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FixTrack — Issue Board</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input id="menu-toggle" type="checkbox">
+<input id="dark-mode" class="theme-toggle" type="checkbox">
+<div class="app">
+<aside class="sidebar">
+  <div class="brand">FIXTRACK<small>CIVIL OPERATIONS</small></div>
+  <nav class="nav">
+<a href="index.html"><span class="icon">⌂</span>Dashboard</a>
+<a class="active" href="../01_issue_board/index.html"><span class="icon">▦</span>Issue Board</a>
+<a href="../02_report_issue/index.html"><span class="icon">＋</span>Report Issue</a>
+<a href="../03_possible_duplicate/index.html"><span class="icon">⊙</span>Possible Duplicate</a>
+<a href="../04_waiting_line/index.html"><span class="icon">◷</span>Waiting Line <span class="badge">8</span></a>
+<a href="../05_assigned_work/index.html"><span class="icon">⌁</span>Assigned Work</a>
+<a href="../06_verify_fix/index.html"><span class="icon">✓</span>Verify Fix</a>
+<a href="../07_issue_detail/index.html"><span class="icon">♙</span>Issue Detail</a>
+<a href="../08_analytics/index.html"><span class="icon">⌁</span>Analytics</a>
+<a href="../09_billing/index.html"><span class="icon">▤</span>Billing</a>
+
+<a href="../10_login/index.html"><span class="icon">↪</span>Login</a>
+<a class="nav-signup" href="../11_signup/index.html"><span class="icon">✦</span>Sign Up</a>
+</nav>
+  <div class="profile-mini"><div class="row"><div class="avatar">AM</div><div><strong>Arina Malik</strong><span>Facilities manager</span></div></div><div class="progress"><i></i></div></div>
+</aside>
+<label class="mobile-overlay" for="menu-toggle"></label>
+<main class="content">
+<header class="topbar">
+  <label class="hamburger" for="menu-toggle">☰</label>
+  <div class="search">⌕ <span>Search issues, rooms, people...</span></div>
+  <div class="actions"><a class="btn btn-outline auth-top-btn" href="../10_login/index.html">Login</a><a class="btn btn-primary auth-top-btn" href="../11_signup/index.html">Sign Up</a>
+    <div class="theme-toggle"><label for="dark-mode">☾</label></div>
+    <a class="btn btn-primary hide-mobile" href="../02_report_issue/index.html">＋ Report issue</a>
+  </div>
+</header>
+<div class="page">
+  <div class="eyebrow">PUBLIC SERVICE BOARD</div>
+  <div class="title-row">
+    <div><h1>What's need attention</h1><div class="subtitle">Monitor reported issues across campus. Follow-up, issue resolution progress and escalations.</div></div>
+    <a class="btn btn-primary" href="../02_report_issue/index.html">＋ Report an issue</a>
+  </div>
+  <section class="stats">
+    <div class="stat"><strong>36</strong><small>Open issues</small><span class="trend">↗ 4 this week</span></div>
+    <div class="stat"><strong>14</strong><small>In progress</small><span class="trend">↗ 2 today</span></div>
+    <div class="stat"><strong>48</strong><small>Resolved this week</small><span class="trend">↑ 12%</span></div>
+    <div class="stat"><strong>4</strong><small>Urgent</small><span class="trend">Needs action</span></div>
+  </section>
+  <div class="toolbar">
+    <div class="field">⌕ Search by issue, room or name</div><div class="field">All categories ▾</div><div class="field">Open + active ▾</div><div class="field">Any priority ▾</div><button class="btn btn-outline">Newest ↕</button>
+  </div>
+  <section class="card">
+    <div class="card-head"><strong>36 OPEN ISSUES</strong><span class="subtitle">Updated just now</span></div>
+    <div class="issue-list">
+      <a class="issue" href="../03_possible_duplicate/index.html"><div class="issue-icon">⌂</div><div><div class="issue-title">Broken corridor light</div><div class="issue-meta">Electrical • Maple Hostel • Floor 3 • Open 2h 14m</div></div><span class="pill orange">Assigned</span><span class="issue-arrow">›</span></a>
+      <a class="issue" href="../04_waiting_line/index.html"><div class="issue-icon" style="background:#e6f5ff;color:#2686bd">⌁</div><div><div class="issue-title">Leaking washroom tap</div><div class="issue-meta">Plumbing • Workshop Block • Open 9h 42m</div></div><span class="pill green">In progress</span><span class="issue-arrow">›</span></a>
+      <a class="issue" href="../04_waiting_line/index.html"><div class="issue-icon" style="background:#ffe7e8;color:#d93643">EV</div><div><div class="issue-title">Broken fire-exit door</div><div class="issue-meta">Safety • Admin Building • East wing • Open 1h 08m</div></div><span class="pill red">Critical</span><span class="issue-arrow">›</span></a>
+      <a class="issue" href="../05_assigned_work/index.html"><div class="issue-icon" style="background:#eef1f5;color:#647187">AC</div><div><div class="issue-title">Damaged library chair</div><div class="issue-meta">Furniture • Central Library • Open 1d 3h</div></div><span class="pill gray">Open</span><span class="issue-arrow">›</span></a>
+    </div>
+  </section>
+</div>
+</main>
+</div>
+</body>
+</html>

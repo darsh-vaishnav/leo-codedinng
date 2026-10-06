@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FixTrack — Verify Fix</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<input id="menu-toggle" type="checkbox"><input id="dark-mode" class="theme-toggle" type="checkbox">
+<div class="app"><aside class="sidebar"><div class="brand">FIXTRACK<small>CIVIL OPERATIONS</small></div><nav class="nav">
+<a href="index.html"><span class="icon">⌂</span>Dashboard</a>
+<a href="../01_issue_board/index.html"><span class="icon">▦</span>Issue Board</a>
+<a href="../02_report_issue/index.html"><span class="icon">＋</span>Report Issue</a>
+<a href="../03_possible_duplicate/index.html"><span class="icon">⊙</span>Possible Duplicate</a>
+<a href="../04_waiting_line/index.html"><span class="icon">◷</span>Waiting Line <span class="badge">8</span></a>
+<a href="../05_assigned_work/index.html"><span class="icon">⌁</span>Assigned Work</a>
+<a class="active" href="../06_verify_fix/index.html"><span class="icon">✓</span>Verify Fix</a>
+<a href="../07_issue_detail/index.html"><span class="icon">♙</span>Issue Detail</a>
+<a href="../08_analytics/index.html"><span class="icon">⌁</span>Analytics</a>
+<a href="../09_billing/index.html"><span class="icon">▤</span>Billing</a>
+
+<a href="../10_login/index.html"><span class="icon">↪</span>Login</a>
+<a class="nav-signup" href="../11_signup/index.html"><span class="icon">✦</span>Sign Up</a>
+</nav><div class="profile-mini"><div class="row"><div class="avatar">AM</div><div><strong>Arina Malik</strong><span>Facilities manager</span></div></div><div class="progress"><i></i></div></div></aside><label class="mobile-overlay" for="menu-toggle"></label>
+<main class="content"><header class="topbar"><label class="hamburger" for="menu-toggle">☰</label><div class="search">⌕ <span>Search issues, rooms, people...</span></div><div class="actions"><a class="btn btn-outline auth-top-btn" href="../10_login/index.html">Login</a><a class="btn btn-primary auth-top-btn" href="../11_signup/index.html">Sign Up</a><div class="theme-toggle"><label for="dark-mode">☾</label></div><a class="btn btn-primary" href="../01_issue_board/index.html">Report issue</a></div></header>
+<div class="page"><div class="crumb">Work queue › Fix verification</div><div class="alert"><strong>Work marked complete by Ravi Kumar.</strong> Resolution verification required before closing issue and notifying reporter. <span class="pill green">Verification due in 2h</span></div>
+<div class="title-row"><div><div class="eyebrow">QUALITY CHECKPOINT</div><h1>Verify the completed fix</h1><div class="subtitle">Compare the original report with completion evidence before closing the issue.</div></div><button class="btn btn-outline">View full history</button></div>
+<div class="grid-2">
+<section class="card"><div class="card-head"><strong>REPORTED VS. COMPLETED</strong><span class="pill green">✓ Overlay</span></div><div class="card-body"><div class="before-after">
+<figure><img src="../assets/corridor-maintenance.jpg" alt="Before repair"><figcaption>BEFORE • Reported corridor light</figcaption></figure>
+<figure><img src="../assets/light-repair.jpg" alt="After repair"><figcaption>AFTER • Completed repair</figcaption></figure>
+</div><div class="card" style="margin-top:12px"><div class="card-body"><b>Ravi Kumar</b><span class="subtitle"> • Electrical maintenance</span><p class="subtitle">“Replaced one LED driver with new connector; tightened both terminal connections, completed a 5-minute operation test.”</p><span class="pill green">Photo + note verified</span></div></div></div></section>
+<aside class="card"><div class="card-head"><strong>VERIFICATION DECISION</strong><span class="pill green">Ready</span></div><div class="card-body">
+<label><input type="checkbox" checked style="width:auto"> Light is operating normally</label><br><br>
+<label><input type="checkbox" checked style="width:auto"> Work matches the reported location</label><br><br>
+<label><input type="checkbox" checked style="width:auto"> Area is safe and clean</label><br><br>
+<label><input type="checkbox" checked style="width:auto"> Completion evidence is clear</label>
+<div class="alert" style="margin-top:14px"><b>Verification note</b><br>Light tested and corridor illumination restored. Evidence matches the reported location.</div>
+<div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn btn-outline">Request rework</button><a class="btn btn-primary" href="../01_issue_board/index.html">✓ Confirm fix</a></div>
+</div></aside>
+</div></div></main></div></body></html>

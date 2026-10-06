@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FixTrack — Dashboard</title>
+<link rel="stylesheet" href="01_issue_board/style.css">
+</head>
+<body>
+<input id="menu-toggle" type="checkbox">
+<input id="dark-mode" class="theme-toggle" type="checkbox">
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">FIXTRACK<small>CIVIL OPERATIONS</small></div>
+    <nav class="nav">
+<a class="active" href="index.html"><span class="icon">⌂</span>Dashboard</a>
+<a href="01_issue_board/index.html"><span class="icon">▦</span>Issue Board</a>
+<a href="02_report_issue/index.html"><span class="icon">＋</span>Report Issue</a>
+<a href="03_possible_duplicate/index.html"><span class="icon">⊙</span>Possible Duplicate</a>
+<a href="04_waiting_line/index.html"><span class="icon">◷</span>Waiting Line <span class="badge">8</span></a>
+<a href="05_assigned_work/index.html"><span class="icon">⌁</span>Assigned Work</a>
+<a href="06_verify_fix/index.html"><span class="icon">✓</span>Verify Fix</a>
+<a href="07_issue_detail/index.html"><span class="icon">♙</span>Issue Detail</a>
+<a href="08_analytics/index.html"><span class="icon">⌁</span>Analytics</a>
+<a href="09_billing/index.html"><span class="icon">▤</span>Billing</a>
+    </nav>
+    <div class="profile-mini">
+      <div class="row"><div class="avatar">AM</div><div><strong>Arina Malik</strong><span>Facilities manager</span></div></div>
+      <div class="progress"><i></i></div>
+    </div>
+  </aside>
+  <label class="mobile-overlay" for="menu-toggle"></label>
+
+  <main class="content">
+    <div class="topbar">
+      <label class="hamburger" for="menu-toggle">☰</label>
+      <div class="search">⌕ <span>Search FixTrack pages...</span></div>
+      <div class="actions"><a class="btn btn-outline auth-top-btn" href="10_login/index.html">Login</a><a class="btn btn-primary auth-top-btn" href="11_signup/index.html">Sign Up</a>
+        <div class="theme-toggle"><label for="dark-mode">☾</label></div>
+        <a class="btn btn-primary" href="02_report_issue/index.html">＋ Report Issue</a>
+      </div>
+    </div>
+    <div class="page">
+      <div class="eyebrow">FIXTRACK • CIVIL OPERATIONS</div>
+      <div class="title-row">
+        <div>
+          <h1>Dashboard</h1>
+          <p class="subtitle">Navigate directly to every FixTrack module from the sidebar or the cards below.</p>
+        </div>
+      </div>
+
+      <div class="card dashboard-photo-card">
+        <img class="dashboard-photo" src="assets/corridor-maintenance.jpg" alt="FixTrack maintenance technician inspecting a facility corridor">
+        <div class="dashboard-photo-copy">
+          <span class="badge-top">LIVE OPERATIONS</span>
+          <h2>Keep every facility issue moving</h2>
+          <p class="subtitle">Track reported problems, technician work, repair evidence and verification from one place.</p>
+          <a class="btn btn-primary" href="01_issue_board/index.html">Open Issue Board →</a> <a class="btn btn-outline" href="11_signup/index.html">Create Account →</a>
+        </div>
+      </div>
+
+      <div class="card welcome-strip">
+        <div><span class="badge-top">PUBLIC ACCESS</span><h2>Start from here</h2><p class="subtitle">New users can create an account before reporting an issue. Returning users can login and continue to their FixTrack workspace.</p></div>
+        <div class="welcome-actions"><a class="btn btn-primary" href="11_signup/index.html">Sign Up</a><a class="btn btn-outline" href="10_login/index.html">Login</a><a class="btn btn-outline" href="02_report_issue/index.html">Report an Issue</a></div>
+      </div>
+
+      <div class="card map-card">
+        <div class="card-head"><div><strong>Facility Navigation</strong><div class="subtitle">Use the map to find the facility and open turn-by-turn directions.</div></div><a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Swaminarayan%20University%2C%20Kalol%2C%20Gujarat">Open Directions ↗</a></div>
+        <div class="map-frame"><iframe title="FixTrack facility map" src="https://www.google.com/maps?q=Swaminarayan%20University%2C%20Kalol%2C%20Gujarat&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="map-note"><span>📍</span><span><strong>Facility location:</strong> Swaminarayan University, Kalol, Gujarat. Replace the destination URL with your actual facility location when deploying FixTrack elsewhere.</span></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><small>Open Issues</small><strong>24</strong><span class="trend">Active</span></div>
+        <div class="stat"><small>Waiting Line</small><strong>8</strong><span class="trend">Manage</span></div>
+        <div class="stat"><small>Assigned Work</small><strong>12</strong><span class="trend">In progress</span></div>
+        <div class="stat"><small>Service Health</small><strong>92%</strong><span class="trend">Healthy</span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><strong>FixTrack Pages</strong><span class="badge-top">All modules linked</span></div>
+        <div class="issue-list">
+          <a class="issue" href="01_issue_board/index.html">
+            <div class="issue-icon">1</div>
+            <div><div class="issue-title">Issue Board</div><div class="issue-meta">Open issues and priorities</div></div>
+            <span class="pill orange">Open</span><span>›</span>
+          </a>
+          <a class="issue" href="02_report_issue/index.html">
+            <div class="issue-icon">2</div>
+            <div><div class="issue-title">Report Issue</div><div class="issue-meta">Create a new maintenance report</div></div>
+            <span class="pill orange">Start</span><span>›</span>
+          </a>
+          <a class="issue" href="03_possible_duplicate/index.html">
+            <div class="issue-icon">3</div>
+            <div><div class="issue-title">Possible Duplicate</div><div class="issue-meta">Compare similar reports</div></div>
+            <span class="pill yellow">Review</span><span>›</span>
+          </a>
+          <a class="issue" href="04_waiting_line/index.html">
+            <div class="issue-icon">4</div>
+            <div><div class="issue-title">Waiting Line</div><div class="issue-meta">Prioritization and accountability</div></div>
+            <span class="pill blue">Manage</span><span>›</span>
+          </a>
+          <a class="issue" href="05_assigned_work/index.html">
+            <div class="issue-icon">5</div>
+            <div><div class="issue-title">Assigned Work</div><div class="issue-meta">Technician route and evidence</div></div>
+            <span class="pill green">Work</span><span>›</span>
+          </a>
+          <a class="issue" href="06_verify_fix/index.html">
+            <div class="issue-icon">6</div>
+            <div><div class="issue-title">Verify Fix</div><div class="issue-meta">Quality check and closure</div></div>
+            <span class="pill green">Verify</span><span>›</span>
+          </a>
+          <a class="issue" href="07_issue_detail/index.html">
+            <div class="issue-icon">7</div>
+            <div><div class="issue-title">Issue Detail</div><div class="issue-meta">Issue overview, SLA and activity</div></div>
+            <span class="pill blue">Details</span><span>›</span>
+          </a>
+          <a class="issue" href="08_analytics/index.html">
+            <div class="issue-icon">8</div>
+            <div><div class="issue-title">Analytics</div><div class="issue-meta">Performance charts and workload</div></div>
+            <span class="pill green">Analytics</span><span>›</span>
+          </a>
+          <a class="issue" href="09_billing/index.html">
+            <div class="issue-icon">9</div>
+            <div><div class="issue-title">Billing</div><div class="issue-meta">Invoices and settlements</div></div>
+            <span class="pill orange">Billing</span><span>›</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

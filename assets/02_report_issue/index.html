@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FixTrack — Report Issue</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<input id="menu-toggle" type="checkbox"><input id="dark-mode" class="theme-toggle" type="checkbox">
+<div class="app"><aside class="sidebar">
+<div class="brand">FIXTRACK<small>CIVIL OPERATIONS</small></div>
+<nav class="nav">
+<a href="index.html"><span class="icon">⌂</span>Dashboard</a>
+<a href="../01_issue_board/index.html"><span class="icon">▦</span>Issue Board</a>
+<a class="active" href="../02_report_issue/index.html"><span class="icon">＋</span>Report Issue</a>
+<a href="../03_possible_duplicate/index.html"><span class="icon">⊙</span>Possible Duplicate</a>
+<a href="../04_waiting_line/index.html"><span class="icon">◷</span>Waiting Line <span class="badge">8</span></a>
+<a href="../05_assigned_work/index.html"><span class="icon">⌁</span>Assigned Work</a>
+<a href="../06_verify_fix/index.html"><span class="icon">✓</span>Verify Fix</a>
+<a href="../07_issue_detail/index.html"><span class="icon">♙</span>Issue Detail</a>
+<a href="../08_analytics/index.html"><span class="icon">⌁</span>Analytics</a>
+<a href="../09_billing/index.html"><span class="icon">▤</span>Billing</a>
+
+<a href="../10_login/index.html"><span class="icon">↪</span>Login</a>
+<a class="nav-signup" href="../11_signup/index.html"><span class="icon">✦</span>Sign Up</a>
+</nav>
+<div class="profile-mini"><div class="row"><div class="avatar">AM</div><div><strong>Arina Malik</strong><span>Facilities manager</span></div></div><div class="progress"><i></i></div></div>
+</aside><label class="mobile-overlay" for="menu-toggle"></label>
+<main class="content"><header class="topbar"><label class="hamburger" for="menu-toggle">☰</label><div class="search">⌕ <span>Search issues, rooms, people...</span></div><div class="actions"><a class="btn btn-outline auth-top-btn" href="../10_login/index.html">Login</a><a class="btn btn-primary auth-top-btn" href="../11_signup/index.html">Sign Up</a><div class="theme-toggle"><label for="dark-mode">☾</label></div><a class="btn btn-primary" href="../01_issue_board/index.html">← Board</a></div></header>
+<div class="page">
+<div class="crumb">Public line › Report issue › Step 1 of 2</div>
+<div class="eyebrow">FAST PUBLIC REPORTING</div>
+<div class="title-row"><div><h1>Tell us what's broken</h1><div class="subtitle">Alert facilities teams and help maintenance resolve the issue faster. Most reports take under a minute.</div></div></div>
+<div class="grid-2">
+<section class="card form-card">
+<form class="report-form" action="../03_possible_duplicate/index.html" method="get" enctype="multipart/form-data">
+<div class="choice-row" style="margin-bottom:12px"><span class="pill orange">1 Describe</span><span class="pill gray">2 Location & photos</span></div>
+<div class="form-grid">
+<div class="form-group"><label for="reporter-name">Your name *</label><input id="reporter-name" name="reporter_name" autocomplete="name" required placeholder="Full name"></div>
+<div class="form-group"><label for="reporter-phone">Phone number *</label><input id="reporter-phone" name="reporter_phone" autocomplete="tel" type="tel" required placeholder="+91 XXXXX XXXXX"></div>
+<div class="form-group full"><label for="reporter-email">Email address *</label><input id="reporter-email" name="reporter_email" autocomplete="email" type="email" required placeholder="you@example.com"></div>
+<div class="form-group full"><label for="issue-title">Short title *</label><input id="issue-title" name="title" required placeholder="e.g. Broken corridor light"></div>
+<div class="form-group full"><label>Category *</label><div class="choice-row"><label class="choice selected"><input type="radio" name="category" value="Electrical" required> ⚡ Electrical</label><label class="choice"><input type="radio" name="category" value="Plumbing"> ⌁ Plumbing</label><label class="choice"><input type="radio" name="category" value="Furniture"> ▤ Furniture</label><label class="choice"><input type="radio" name="category" value="Safety"> ⚠ Safety</label><label class="choice"><input type="radio" name="category" value="HVAC"> ▥ HVAC</label><label class="choice"><input type="radio" name="category" value="Other"> Other</label></div></div>
+<div class="form-group full"><label>Photos (up to 4)</label><p class="form-help">Add up to four clear photos from different angles. On a phone, the camera option can be used directly.</p><div class="photo-input-grid">
+<label class="photo-upload"><span>Photo 1 *</span><input type="file" name="photo1" accept="image/*" capture="environment" required><small>Browse or take photo</small></label>
+<label class="photo-upload"><span>Photo 2</span><input type="file" name="photo2" accept="image/*" capture="environment"><small>Optional angle</small></label>
+<label class="photo-upload"><span>Photo 3</span><input type="file" name="photo3" accept="image/*" capture="environment"><small>Optional detail</small></label>
+<label class="photo-upload"><span>Photo 4</span><input type="file" name="photo4" accept="image/*" capture="environment"><small>Optional context</small></label>
+</div></div>
+<div class="form-group"><label for="building">Building *</label><select id="building" name="building" required><option value="">Select building</option><option>Maple Hostel</option><option>Central Library</option><option>Admin Building</option><option>Workshop Block</option></select></div>
+<div class="form-group"><label for="floor">Floor *</label><select id="floor" name="floor" required><option value="">Select floor</option><option>Ground floor</option><option>Floor 2</option><option>Floor 3</option><option>Floor 4</option></select></div>
+<div class="form-group full"><label for="location">Specific location</label><input id="location" name="location" placeholder="Room, corridor, staircase, landmark"></div>
+<div class="form-group full"><label for="description">What’s happening? *</label><textarea id="description" name="description" required placeholder="Describe what is broken, when you noticed it, and anything that may help the technician."></textarea></div>
+<div class="form-group full"><label>Urgency & impact *</label><div class="choice-row"><label class="choice"><input type="radio" name="urgency" value="Low" required> Low<br><small>No immediate impact</small></label><label class="choice selected"><input type="radio" name="urgency" value="Medium"> Medium<br><small>Affects some users</small></label><label class="choice"><input type="radio" name="urgency" value="High"> High<br><small>Affects many</small></label><label class="choice"><input type="radio" name="urgency" value="Critical"> Critical<br><small>Safety risk</small></label></div></div>
+<div class="form-group full"><label class="checkline"><input type="checkbox" name="updates" checked> Send me updates about this issue</label><small class="subtitle">We'll email status changes and resolution updates.</small></div>
+</div>
+<div class="form-actions"><a class="btn btn-outline" href="../index.html">Cancel</a><button class="btn btn-primary" type="submit">Check for duplicates →</button></div>
+</form>
+</section>
+
+<aside class="card side-card">
+<h3>WE'RE HAPPY TO HELP!</h3>
+<div class="tip">✓ We check similar reports</div><div class="tip">⚡ A manager assigns the right team</div><div class="tip">⌁ You receive progress updates</div><div class="tip">♥ The complaint is for everyone</div>
+<h3 style="margin-top:18px">NEARBY ACTIVITY</h3>
+<img class="photo" src="../assets/corridor-maintenance.jpg" alt="Corridor reference photo">
+<p class="subtitle">Flickering light near Stairwell B</p><span class="pill orange">1 report</span>
+</aside>
+</div>
+</div></main></div>
+</body></html>
